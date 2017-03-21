@@ -1,0 +1,7 @@
+.tp-block{
+      display: flex;
+      flex-wrap: wrap;
+  }  
+.tp-con{
+     width: 25%;
+}
