@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { NewComponent } from './new/new.component';
 import { FormComponent } from './form/form.component';
 import { EmployeeComponent } from './employee/employee.component';
+import { TestComponent } from './test/test.component';
 @NgModule({
   declarations: [
     AppComponent,
     NewComponent,
     FormComponent,
     EmployeeComponent,
+    TestComponent,
     
   ],
   imports: [
