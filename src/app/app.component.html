@@ -7,14 +7,105 @@
 <p>{{l.value}}</p> </div></div></div>
 <button (click)="onClick()">button..</button>-->
 <!--<app-form></app-form>-->
-<section>
-<h1>Welcome to Angular</h1>
-<ul class="nav nav-pills">
-    <li><a routerLink="">Home</a></li>
-    <li><a routerLink="employees">Employee</a></li>
-</ul>
-</section>
+<!--<section>
+    <h1>Welcome to Angular</h1>
+    <ul class="nav nav-pills">
+        <li><a routerLink="">Home</a></li>
+        <li><a routerLink="form">Form</a></li>
+        <li><a routerLink="employees">Employee</a></li>
+    </ul>-->
+    <!--khi không dùng link thì dung ngSwitch-->
+    <!--<button class="btn" (click)=onClickButton(1)>Home</button>
+        <button class="btn" (click)=onClickButton(2)>Form</button>
+        <button class="btn" (click)=onClickButton(3)>Employee</button>
+        <div *ngIf="checked"><app-bar></app-bar></div>
+    
+    <div [ngSwitch]= "choice">
+ <template [ngSwitchCase]= "1">
+   <app-bar></app-bar>
+ </template>
+ <template [ngSwitchCase]= "2">
+   <app-form></app-form>
+ </template>
+ <template [ngSwitchCase]= "3">
+   <app-employee></app-employee>
+ </template>
+</div>-->
+<!--</section>
 <router-outlet></router-outlet>
 <section>
     Footer
-</section>
+</section>-->
+
+     <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Start Bootstrap</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <p class="lead">Shop Name</p>
+                <div class="list-group">
+                    <a routerLink="" class="list-group-item active">Home</a>
+                    <a routerLink="form" class="list-group-item">Form</a>
+                    <a routerLink="employees" class="list-group-item">Employee</a>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+
+                <div class="thumbnail">
+            
+                    <div class="caption-full">
+                        <router-outlet></router-outlet>
+                    </div>
+                   
+                </div>
+
+
+    <div class="container">
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->

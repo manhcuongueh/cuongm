@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {Router} from '@angular/router'
 @Component({
   selector: 'app-bar',
   templateUrl: './bar.component.html',
@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+  onClick(){
+    this.router.navigate(['employees'])
+  }
 
   ngOnInit() {
   }

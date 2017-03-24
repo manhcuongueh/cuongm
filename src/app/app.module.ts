@@ -9,6 +9,7 @@ import { FormComponent } from './form/form.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { BarComponent } from './bar/bar.component';
 import{appRoutes} from './app.routes';
+import { NotFoundComponent } from './not-found/not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +17,7 @@ import{appRoutes} from './app.routes';
     FormComponent,
     EmployeeComponent,
     BarComponent,
+    NotFoundComponent,
     
   ],
   imports: [

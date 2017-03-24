@@ -6,16 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title:string = "Tao dang doi";
-  today= Date.now();
- 
-  list=[{value: true},{value:false},{value:true},
-  {value: true},{value:true},{value:true}];
-   onClick(){
-     for (var i = 0; i < this.list.length; i++){
-       this.list[i].value=true;
+  title: string = "Tao dang doi";
+  today = Date.now();
+  //ngSwitchCase
+  // choice:number=1;
+  // onClickButton(choice) {
+  //   this.choice=choice;
+  // }
 
-     }
+  list = [{ value: true }, { value: false }, { value: true },
+  { value: true }, { value: true }, { value: true }];
+  onClick() {
+    for (var i = 0; i < this.list.length; i++) {
+      this.list[i].value = true;
+
+    }
   }
 }
 
